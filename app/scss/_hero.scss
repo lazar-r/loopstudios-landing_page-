@@ -1,0 +1,22 @@
+.hero {
+    min-height: 650px;
+    color: $white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431390/loopstudios-landing%20page/images/desktop/image-hero_u9ghb7.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint-down(small) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431393/loopstudios-landing%20page/images/mobile/image-hero_oygufp.jpg')
+    }
+    &__headline {
+        margin-top: 130px;
+        max-width: 560px;
+        border: 2px solid $white;
+        padding: 37px;
+        flex-wrap: wrap;
+        h1 {
+            text-transform: uppercase;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+
+                      .line1 {
+                        transform: translateY(6px) 
+                        rotate(45deg);
+                        transform-origin: 50% 50%;
+                    }
+                    .line2{
+                        display: none;
+                    }
+                    .line3 {
+                        transform: translateY(-6px)
+                        rotate(-45deg);
+                        transform-origin: 50% 50%;
+                    }
+
+                                      <path class="line1" d="M0 0h24v2H0zM0"/>
+                  <path class="line2" d="M0 7h24v2H0zM0"/>
+                  <path class="line3" d="M0 14h24v2H0z"/>
+  
+  
+  
+
+  Immersive experiences that deliver
+
+  The leader in interactive VR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  About
+  Careers
+  Events
+  Products
+  Support
+
+  © 2021 Loopstudios. All rights reserved.

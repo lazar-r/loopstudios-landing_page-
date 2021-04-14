@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html {
+    font-size: 100%;
+}
+body {
+    font-family: 'Alata', sans-serif;
+    font-size: $body;
+    font-weight: 400;
+    h1, h2, h3 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+    }
+    h1 {
+        font-size: $h1;
+        @include breakpoint-down(small) {
+            font-size: $h1small;
+        }
+    }
+    h2 {
+        font-size: 43px;
+        text-transform: uppercase;
+    }
+    h3 {
+        color: $white;
+        text-transform: uppercase;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        color: $white;
+    }
+    a, a:visited, a:hover {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+//Containers
+
+    //Tablet >
+
+    @include breakpoint-up(large)  {
+        .container {
+            width: 100%;
+            max-width: 1111px;
+            margin: 0 auto;
+            padding: 0 20px;
+
+        }
+    }
+    @include breakpoint-down(medium) {
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    }
+
+    //Tablet <
+
+    @include breakpoint-down(small) {
+        .container {
+            width: 100%;
+            max-width: 330px;
+            margin: 0 auto;
+        }
+    }
+// Visibility
+
+.hide-for-mobile {
+    @include breakpoint-down(medium){
+      display: none;
+    }
+  }
+  
+  .hide-for-desktop {
+    @include breakpoint-up(large){
+      display: none;
+    }
+  }
+
+
+//Flexbox
+
+.flex {
+    display: flex;
+
+    &-fd-c {
+        flex-direction: column;
+    }
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-sa {
+        justify-content: space-around;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+    &-ai-e {
+        align-items: flex-end;
+    }
+}
+
+// Buttons 
+
+button, .button {
+    color: $black;
+    padding: 12px 43px;
+    border: 2px solid $black;
+    font-family: 'Alata', sans-serif;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    &:hover {
+        cursor: pointer;
+        background-color: $black;
+        color: $white;
+    }
+}

@@ -1,0 +1,97 @@
+.categories {
+    min-height: 1069px;
+    margin: 164px 0;
+    &__heading {
+        flex: 3;
+        @include breakpoint-down (small) {
+            flex-direction: column;
+            text-align: center;
+            h2 {
+                font-size: 35px;
+            }
+        }
+    }
+    &__button {
+        margin-top: -43px;
+        align-self: flex-end;
+        flex: 1;
+        @include breakpoint-down (small) {
+            order: 3;
+            align-self: center;
+            margin-top: 43px;
+        }
+    }
+    &__grid {
+        display: grid;
+        padding-top: 70px;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+        @include breakpoint-down (small) {
+            justify-items: center;
+        }
+        .item {
+            display: flex;
+            min-height: 400px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 42px;
+            @include breakpoint-down (small) {
+                min-height: 80px;
+                min-width: 74%;
+            }
+            h3 {
+                font-size: 35px;
+                align-self: flex-end;
+            }
+        }
+        .earth {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431389/loopstudios-landing%20page/images/desktop/image-deep-earth_twxdwi.jpg');
+            @include breakpoint-down (small) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431392/loopstudios-landing%20page/images/mobile/image-deep-earth_dyaut9.jpg');
+            }
+        }
+        .arcade {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431390/loopstudios-landing%20page/images/desktop/image-night-arcade_ek3uxe.jpg');
+            @include breakpoint-down (small) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431393/loopstudios-landing%20page/images/mobile/image-night-arcade_pize2g.jpg');
+            }
+        }
+        .soccer {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431390/loopstudios-landing%20page/images/desktop/image-soccer-team_xzmsmx.jpg');
+            @include breakpoint-down (small) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431393/loopstudios-landing%20page/images/mobile/image-soccer-team_gm1ode.jpg');
+            }
+        }
+        .grid {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431390/loopstudios-landing%20page/images/desktop/image-grid_fythym.jpg');
+            @include breakpoint-down (small) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431393/loopstudios-landing%20page/images/mobile/image-grid_fjgjmc.jpg');
+            }
+        }
+        .VR {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431389/loopstudios-landing%20page/images/desktop/image-from-above_wncr3z.jpg');
+            @include breakpoint-down (small) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431392/loopstudios-landing%20page/images/mobile/image-from-above_eeodjv.jpg');
+            }
+        }
+        .borealis {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431390/loopstudios-landing%20page/images/desktop/image-pocket-borealis_dyrou4.jpg');
+            @include breakpoint-down (small) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431394/loopstudios-landing%20page/images/mobile/image-pocket-borealis_dawv3r.jpg');
+            }
+        }
+        .curiosity {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431389/loopstudios-landing%20page/images/desktop/image-curiosity_dyvako.jpg');
+            @include breakpoint-down (small) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431392/loopstudios-landing%20page/images/mobile/image-curiosity_kzdbjn.jpg');
+            }
+        }
+        .fisheye {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431390/loopstudios-landing%20page/images/desktop/image-fisheye_hm8gjv.jpg');
+            @include breakpoint-down (small) {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431393/loopstudios-landing%20page/images/mobile/image-fisheye_tobmzp.jpg');
+            }
+        }
+    }
+}

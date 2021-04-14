@@ -31,11 +31,31 @@
         }
         .item {
             display: flex;
+            position: relative;
             min-height: 400px;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             padding: 42px;
+            .overlay {
+                position: absolute;
+                transition: all 150ms ease-in-out;
+                background-color: $white;
+                top: 0;
+                left: 0;
+                min-height: 100%;
+                min-width: 100%;
+                opacity: 0;
+            }
+            &:hover {
+                cursor: pointer;
+                .overlay {
+                    opacity: .6;
+                }
+                h3 {
+                    color: $black;
+                }
+            }
             @include breakpoint-down (small) {
                 min-height: 80px;
                 min-width: 74%;
@@ -43,6 +63,7 @@
             h3 {
                 font-size: 35px;
                 align-self: flex-end;
+                z-index: 999;
             }
         }
         .earth {

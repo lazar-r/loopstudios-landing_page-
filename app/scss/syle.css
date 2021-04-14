@@ -443,11 +443,36 @@ button:hover, .button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   min-height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 42px;
+}
+
+.categories__grid .item .overlay {
+  position: absolute;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  background-color: white;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+}
+
+.categories__grid .item:hover {
+  cursor: pointer;
+}
+
+.categories__grid .item:hover .overlay {
+  opacity: .6;
+}
+
+.categories__grid .item:hover h3 {
+  color: black;
 }
 
 @media (max-width: 39.9375em) {
@@ -461,6 +486,7 @@ button:hover, .button:hover {
   font-size: 35px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  z-index: 999;
 }
 
 .categories__grid .earth {

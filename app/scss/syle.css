@@ -306,8 +306,8 @@ button:hover, .button:hover {
   display: grid;
   -ms-grid-columns: 50% 15% auto;
       grid-template-columns: 50% 15% auto;
-  -ms-grid-rows: 50% auto;
-      grid-template-rows: 50% auto;
+  -ms-grid-rows: 229.5px auto;
+      grid-template-rows: 229.5px auto;
 }
 
 .about .about__container .about__image {

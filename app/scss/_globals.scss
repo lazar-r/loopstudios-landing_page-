@@ -19,6 +19,7 @@ body {
     }
     h1 {
         font-size: $h1;
+        line-height: 1;
         @include breakpoint-down(small) {
             font-size: $h1small;
         }

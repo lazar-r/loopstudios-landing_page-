@@ -27,6 +27,7 @@ body h1, body h2, body h3 {
 
 body h1 {
   font-size: 72px;
+  line-height: 1;
 }
 
 @media (max-width: 39.9375em) {
@@ -268,8 +269,8 @@ button:hover, .button:hover {
 .hero {
   min-height: 650px;
   color: white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431390/loopstudios-landing%20page/images/desktop/image-hero_u9ghb7.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431390/loopstudios-landing%20page/images/desktop/image-hero_u9ghb7.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.3))), url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431390/loopstudios-landing%20page/images/desktop/image-hero_u9ghb7.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431390/loopstudios-landing%20page/images/desktop/image-hero_u9ghb7.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -277,8 +278,8 @@ button:hover, .button:hover {
 
 @media (max-width: 39.9375em) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.3))), url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431393/loopstudios-landing%20page/images/mobile/image-hero_oygufp.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431393/loopstudios-landing%20page/images/mobile/image-hero_oygufp.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2))), url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431393/loopstudios-landing%20page/images/mobile/image-hero_oygufp.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431393/loopstudios-landing%20page/images/mobile/image-hero_oygufp.jpg");
   }
 }
 

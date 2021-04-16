@@ -1,0 +1,66 @@
+.footer {
+    background-color: $black;
+    @include breakpoint-down(small) {
+        padding: 55px 0;
+    }
+    @include breakpoint-up (medium) {
+        padding: 43px 0;
+    }
+    &__container {
+        a {
+            &::after {
+                content: '';
+                position: absolute;
+                width: 80%;
+                height: 2px;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%) scaleX(0);
+                opacity: 0;
+                transition: opacity 0.2s, transform 0.3s;
+            }
+            &:hover::after {
+                border-bottom: 2px solid $white;
+                transform: translateX(-50%) scaleX(1);
+                opacity: 1;
+            }
+        }
+        @include breakpoint-down(small){
+            flex-direction: column;
+            text-align: center;
+            a::after {
+                width: 30%;
+            }
+        }
+    }
+    &__links {
+        @include breakpoint-down (small){
+            flex-direction: column;
+            padding: 48px 0;
+            a {
+                &:not(:last-child){
+                    margin-bottom: 32px;
+                }
+            }
+        }
+        @include breakpoint-up (medium){
+            padding: 26px 0;
+            a {
+                &:not(:last-child){
+                    margin-right: 32px;
+                }
+            }
+        }
+    }
+    &__icons { 
+        a {
+            &:not(:last-child){
+                margin-right: 15px;
+            }
+        }
+        p {
+            padding-top: 26px;
+            color: $darkgray;
+        }
+    }
+}

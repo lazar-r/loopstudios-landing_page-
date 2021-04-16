@@ -2,7 +2,6 @@
     min-height: 1069px;
     margin: 164px 0;
     &__heading {
-        flex: 3;
         @include breakpoint-down (small) {
             flex-direction: column;
             text-align: center;
@@ -14,7 +13,6 @@
     &__button {
         margin-top: -43px;
         align-self: flex-end;
-        flex: 1;
         @include breakpoint-down (small) {
             order: 3;
             align-self: center;
@@ -25,7 +23,7 @@
         display: grid;
         padding-top: 70px;
         gap: 30px;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
         @include breakpoint-down (small) {
             justify-items: center;
         }
@@ -39,7 +37,7 @@
             padding: 42px;
             .overlay {
                 position: absolute;
-                transition: all 150ms ease-in-out;
+                transition: all 200ms ease-in-out;
                 background-color: $white;
                 top: 0;
                 left: 0;

@@ -8,11 +8,7 @@
         z-index: 99;
     }
     &__links {
-        
         a {
-            position: relative;
-            padding-bottom: 10px;
-            color: $white;
             &:not(:last-child) {
                 margin-right: 20px;
             }
@@ -40,6 +36,7 @@
     &__toggle {
 
         .burger__container {
+            cursor: pointer;
             position: relative;
             width: 30px;
             height: 30px;

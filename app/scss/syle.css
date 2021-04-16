@@ -51,6 +51,8 @@ body ul {
 
 body a {
   color: white;
+  position: relative;
+  padding-bottom: 10px;
 }
 
 body a, body a:visited, body a:hover {
@@ -169,12 +171,6 @@ button:hover, .button:hover {
   z-index: 99;
 }
 
-.header__links a {
-  position: relative;
-  padding-bottom: 10px;
-  color: white;
-}
-
 .header__links a:not(:last-child) {
   margin-right: 20px;
 }
@@ -207,6 +203,7 @@ button:hover, .button:hover {
 }
 
 .header__toggle .burger__container {
+  cursor: pointer;
   position: relative;
   width: 30px;
   height: 30px;
@@ -377,17 +374,15 @@ button:hover, .button:hover {
   .about .about__container .about__text h2 {
     font-size: 35px;
   }
+  .about .about__container .about__text p {
+    line-height: 1.7;
+    padding: 0 20px;
+  }
 }
 
 .categories {
   min-height: 1069px;
   margin: 164px 0;
-}
-
-.categories__heading {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
 }
 
 @media (max-width: 39.9375em) {
@@ -407,9 +402,6 @@ button:hover, .button:hover {
   margin-top: -43px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 @media (max-width: 39.9375em) {
@@ -429,8 +421,8 @@ button:hover, .button:hover {
   display: grid;
   padding-top: 70px;
   gap: 30px;
-  -ms-grid-columns: (minmax(230px, 2fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+  -ms-grid-columns: (minmax(250px, 2fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
 }
 
 @media (max-width: 39.9375em) {
@@ -453,8 +445,8 @@ button:hover, .button:hover {
 
 .categories__grid .item .overlay {
   position: absolute;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   background-color: white;
   top: 0;
   left: 0;
@@ -583,5 +575,88 @@ button:hover, .button:hover {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431393/loopstudios-landing%20page/images/mobile/image-fisheye_tobmzp.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url("https://res.cloudinary.com/dkbbe0tdb/image/upload/v1618431393/loopstudios-landing%20page/images/mobile/image-fisheye_tobmzp.jpg");
   }
+}
+
+.footer {
+  background-color: black;
+}
+
+@media (max-width: 39.9375em) {
+  .footer {
+    padding: 55px 0;
+  }
+}
+
+@media (min-width: 40em) {
+  .footer {
+    padding: 43px 0;
+  }
+}
+
+.footer__container a::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.3s;
+  transition: opacity 0.2s, -webkit-transform 0.3s;
+  transition: opacity 0.2s, transform 0.3s;
+  transition: opacity 0.2s, transform 0.3s, -webkit-transform 0.3s;
+}
+
+.footer__container a:hover::after {
+  border-bottom: 2px solid white;
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
+  opacity: 1;
+}
+
+@media (max-width: 39.9375em) {
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer__container a::after {
+    width: 30%;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .footer__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 48px 0;
+  }
+  .footer__links a:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 40em) {
+  .footer__links {
+    padding: 26px 0;
+  }
+  .footer__links a:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.footer__icons a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer__icons p {
+  padding-top: 26px;
+  color: #8c8c8c;
 }
 /*# sourceMappingURL=syle.css.map */

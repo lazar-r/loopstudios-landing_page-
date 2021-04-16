@@ -36,6 +36,8 @@ body {
     }
     a {
         color: $white;
+        position: relative;
+        padding-bottom: 10px;
     }
     a, a:visited, a:hover {
         text-decoration: none;
